@@ -1,10 +1,13 @@
 function computerPlay() {
     const play = ['rock', 'paper', 'scissors'];
     return play[Math.floor(Math.random() * 3)];
+    //this generates a random result from the computer player//
 }
 
 function game() {
-    for (var i = 0; i < 5; i++) {
+    for (var i = 0; i < 5; i++) 
+   //this function dictates the script to run five rounds// 
+    {
 
         function playRound(playerSelection, computerSelection) {
             if (playerSelection.toLowerCase() == 'rock' && computerSelection == 'scissors') {
@@ -23,6 +26,7 @@ function game() {
                 return "Damn it's a tie!"
              } else {
                 return "Please enter a valid weapon dumbass! Rock, Paper, or Scissors only"
+                 //this command is triggered onyl if an invalid input is given, such as a misspelling//
              }
     }
 
